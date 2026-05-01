@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Sea Slug | The Blue Angel of the Sea</title>
+    <meta name="description" content="Discover the mystical art of the deep sea, the Glaucus atlanticus (Blue Sea Slug).">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00d2ff',
+                        secondary: '#3a7bd5',
+                        dark: '#000b14',
+                        darker: '#00050a',
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #00d2ff, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at center, transparent, #000b14);
+        }
+    </style>
+</head>
+<body class="bg-dark text-white font-sans selection:bg-primary selection:text-dark">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-500 py-6">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between md:grid md:grid-cols-3 items-center">
+            <div class="text-2xl font-extrabold tracking-tighter text-gradient justify-self-start">BlueAngel</div>
+            <ul class="hidden md:flex items-center space-x-10 text-sm font-medium text-white/70 justify-self-center whitespace-nowrap">
+                <li><a href="#home" class="hover:text-primary transition-colors">Home</a></li>
+                <li><a href="#product" class="hover:text-primary transition-colors">Product</a></li>
+                <li><a href="#story" class="hover:text-primary transition-colors">Story</a></li>
+                <li><a href="#contact" class="hover:text-primary transition-colors">Contact</a></li>
+                <li class="flex items-center gap-2 border-l border-white/10 pl-10">
+                    <a href="index.html" class="hover:text-primary transition-colors">KR</a>
+                    <span class="text-white/20">|</span>
+                    <a href="en.html" class="text-primary font-bold">EN</a>
+                </li>
+            </ul>
+            <div class="flex items-center gap-4 justify-self-end whitespace-nowrap">
+                <button class="bg-gradient-to-r from-primary to-secondary px-6 py-2.5 rounded-full text-sm font-bold shadow-lg shadow-primary/20 hover:scale-105 transition-transform active:scale-95 hidden sm:block whitespace-nowrap">
+                    Explore
+                </button>
+                <button id="mobile-menu-btn" class="md:hidden text-white p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-dark/95 backdrop-blur-xl translate-x-full transition-transform duration-500 md:hidden">
+        <div class="flex flex-col h-full p-10">
+            <div class="flex justify-between items-center mb-16">
+                <div class="text-2xl font-extrabold text-gradient">BlueAngel</div>
+                <button id="close-menu" class="text-white p-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <ul class="flex flex-col space-y-8 text-2xl font-bold">
+                <li><a href="#home" class="mobile-link">Home</a></li>
+                <li><a href="#product" class="mobile-link">Product</a></li>
+                <li><a href="#story" class="mobile-link">Story</a></li>
+                <li><a href="#contact" class="mobile-link">Contact</a></li>
+            </ul>
+            <div class="mt-auto flex items-center gap-6 pt-10 border-t border-white/10">
+                <a href="index.html" class="text-white/40 text-xl font-bold">KR</a>
+                <a href="en.html" class="text-primary text-xl font-bold">EN</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="hero_blue_sea_slug.png" alt="Hero" class="w-full h-full object-cover opacity-60 scale-105 animate-[pulse_8s_infinite]">
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-6 max-w-4xl" data-aos="fade-up">
+            <h1 class="text-6xl md:text-8xl font-extrabold mb-6 tracking-tighter leading-tight">
+                The <span class="text-gradient">Blue Dragon</span>
+            </h1>
+            <p class="text-lg md:text-xl text-white/60 mb-10 font-light leading-relaxed max-w-2xl mx-auto">
+                Explore the world of the Blue Sea Slug, the 'Blue Angel' of the deep. Experience the most wondrous art nature has to offer.
+            </p>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#product" class="px-8 py-4 rounded-full border border-white/10 glass hover:bg-white/5 transition-all text-sm font-bold uppercase tracking-widest">View Details</a>
+                <a href="#story" class="px-8 py-4 rounded-full bg-gradient-to-r from-primary to-secondary hover:shadow-xl hover:shadow-primary/30 transition-all text-sm font-bold uppercase tracking-widest">Read Story</a>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50">
+            <div class="w-6 h-10 border-2 border-white/20 rounded-full relative">
+                <div class="w-1 h-2 bg-primary rounded-full absolute top-2 left-1/2 -translate-x-1/2 animate-bounce"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="product" class="py-32 bg-darker relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-20" data-aos="fade-up">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Product Features</h2>
+                <div class="h-1.5 w-20 bg-primary mx-auto rounded-full mb-6"></div>
+                <p class="text-white/50 text-lg">Perfect design and aesthetics of survival crafted by nature.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass p-10 rounded-[2rem] hover:-translate-y-2 transition-all duration-500 group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-5xl mb-6 group-hover:scale-110 transition-transform">🌊</div>
+                    <h3 class="text-2xl font-bold mb-4">Mystical Colors</h3>
+                    <p class="text-white/60 font-light leading-relaxed">Boasts a unique color pattern where deep-sea emerald and Milky Way silver harmonize beautifully.</p>
+                </div>
+                <div class="glass p-10 rounded-[2rem] hover:-translate-y-2 transition-all duration-500 group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-5xl mb-6 group-hover:scale-110 transition-transform">✨</div>
+                    <h3 class="text-2xl font-bold mb-4">Elegant Swimming</h3>
+                    <p class="text-white/60 font-light leading-relaxed">Its graceful movement, riding the waves using wing-like cerata, leaves viewers mesmerized.</p>
+                </div>
+                <div class="glass p-10 rounded-[2rem] hover:-translate-y-2 transition-all duration-500 group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-5xl mb-6 group-hover:scale-110 transition-transform">🛡️</div>
+                    <h3 class="text-2xl font-bold mb-4">Wisdom of Survival</h3>
+                    <p class="text-white/60 font-light leading-relaxed">Despite its small size, it's a perfect life form designed by nature with powerful protective mechanisms.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section class="py-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-16">
+            <div class="lg:w-1/2 relative" data-aos="zoom-in">
+                <div class="absolute -inset-4 bg-primary/20 blur-3xl rounded-full"></div>
+                <img src="feature_detail_slug.png" alt="Detail" class="relative rounded-3xl shadow-2xl border border-white/10">
+            </div>
+            <div class="lg:w-1/2" data-aos="fade-left">
+                <span class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-widest uppercase mb-6 border border-primary/20">Detail View</span>
+                <h2 class="text-5xl font-extrabold mb-8 leading-tight">The Ultimate <span class="text-gradient">Precision</span></h2>
+                <p class="text-white/60 text-lg mb-8 font-light leading-relaxed">
+                    Every tiny detail of the Blue Sea Slug holds the history of the ocean. The contrast between silver luster and deep blue is more radiant than any man-made art.
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-4 text-white/80">
+                        <span class="w-6 h-6 flex items-center justify-center rounded-full bg-primary/20 text-primary text-xs font-bold">✓</span>
+                        Peak of natural camouflage
+                    </li>
+                    <li class="flex items-center gap-4 text-white/80">
+                        <span class="w-6 h-6 flex items-center justify-center rounded-full bg-primary/20 text-primary text-xs font-bold">✓</span>
+                        Icon of the deep-sea ecosystem
+                    </li>
+                    <li class="flex items-center gap-4 text-white/80">
+                        <span class="w-6 h-6 flex items-center justify-center rounded-full bg-primary/20 text-primary text-xs font-bold">✓</span>
+                        Unique streamlined silhouette
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section id="story" class="py-32 bg-gradient-to-b from-darker to-dark relative">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="glass p-16 md:p-24 rounded-[3rem] text-center relative overflow-hidden" data-aos="fade-up">
+                <div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-primary/10 blur-3xl rounded-full"></div>
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-8">Our Story</h2>
+                <p class="text-white/60 text-lg md:text-xl font-light leading-relaxed mb-12 italic">
+                    "We are inspired by the Blue Sea Slug, the most beautiful creature in the ocean. We reinterpret their flexibility, strength, and overwhelming beauty with a modern touch."
+                </p>
+                <div class="flex flex-col md:flex-row justify-center gap-12 md:gap-24">
+                    <div>
+                        <div class="text-5xl font-extrabold text-primary mb-2">100%</div>
+                        <div class="text-xs uppercase tracking-widest text-white/40">Natural Inspiration</div>
+                    </div>
+                    <div>
+                        <div class="text-5xl font-extrabold text-primary mb-2">Deep</div>
+                        <div class="text-xs uppercase tracking-widest text-white/40">Ocean Origin</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-32">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="bg-gradient-to-br from-[#001220] to-[#002a45] p-16 md:p-24 rounded-[3rem] text-center border border-white/5 relative overflow-hidden" data-aos="flip-up">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Ready to Explore Together?</h2>
+                <p class="text-white/50 text-lg mb-10 max-w-xl mx-auto">Be the first to receive more information and news about the Blue Sea Slug.</p>
+                <form class="flex flex-col md:flex-row gap-4 max-w-lg mx-auto">
+                    <input type="email" placeholder="Enter your email address" class="flex-1 bg-white/5 border border-white/10 rounded-full px-8 py-4 outline-none focus:border-primary transition-colors text-white">
+                    <button class="bg-primary text-dark font-bold px-10 py-4 rounded-full hover:bg-white transition-colors">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="text-2xl font-extrabold tracking-tighter text-gradient mb-6">BlueAngel</div>
+                    <p class="text-white/40 max-w-sm font-light">Exploring and documenting the wonders of nature. We find the most radiant pieces of inspiration from the sea and deliver them to you.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 uppercase tracking-widest text-xs">Quick Links</h4>
+                    <ul class="space-y-3 text-sm text-white/40 font-light">
+                        <li><a href="#" class="hover:text-primary transition-colors">About</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Gallery</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Sustainability</a></li>
+                        <li><a href="#" class="hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 uppercase tracking-widest text-xs">Follow Us</h4>
+                    <div class="flex gap-6 text-white/40 text-xl">
+                        <a href="#" class="hover:text-primary transition-colors">IG</a>
+                        <a href="#" class="hover:text-primary transition-colors">TW</a>
+                        <a href="#" class="hover:text-primary transition-colors">FB</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/5 text-center text-white/20 text-xs tracking-widest uppercase">
+                &copy; 2026 BlueAngel Project. Designed for Ocean Lovers.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1200, once: true, offset: 50 });
+
+        const navbar = document.getElementById('navbar');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const closeMenuBtn = document.getElementById('close-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('glass', 'py-4');
+                navbar.classList.remove('py-6');
+            } else {
+                navbar.classList.remove('glass', 'py-4');
+                navbar.classList.add('py-6');
+            }
+        });
+
+        const toggleMenu = () => {
+            mobileMenu.classList.toggle('translate-x-full');
+        };
+
+        mobileMenuBtn.addEventListener('click', toggleMenu);
+        closeMenuBtn.addEventListener('click', toggleMenu);
+        mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
+    </script>
+</body>
+</html>

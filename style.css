@@ -1,0 +1,11 @@
+/* Tailwind is used via CDN in index.html */
+/* Custom global overrides or extra animations can be added here */
+
+@keyframes pulse-slow {
+    0%, 100% { transform: scale(1); opacity: 0.6; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+}
+
+.animate-pulse-slow {
+    animation: pulse-slow 10s ease-in-out infinite;
+}
